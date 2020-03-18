@@ -59,7 +59,7 @@ Future<Client> resourceOwnerOtpGrant(
   var startTime = new DateTime.now();
 
   var body = {
-    "grant_type": "password",
+    "grant_type": "phone_verification_code",
     "phone_number": username,
     "otp_code": password,
     "provider": "members"
