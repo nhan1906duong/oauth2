@@ -60,8 +60,8 @@ Future<Client> resourceOwnerOtpGrant(
 
   var body = {
     "grant_type": "phone_verification_code",
-    "phone_number": username,
-    "otp_code": password,
+    "phone_number": phoneNumber,
+    "otp_code": otp,
     "provider": "members"
   };
 
